@@ -1,0 +1,13 @@
+<div class="container">
+  <%= form_with model: @task, class:"form-group" do |f|%>
+    <%= f.label :title %>
+    <%= f.text_field :title, class:"form-control m-1" %>
+    <%= f.label :details %>
+    <%= f.text_field :details, class:"form-control m-1" %>
+    <%= f.check_box :completed %>
+    <%= f.submit%>
+  <% end %>
+
+  <%= link_to "Back", tasks_path %>
+</div>
+
